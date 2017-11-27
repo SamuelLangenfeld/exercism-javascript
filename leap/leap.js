@@ -14,13 +14,10 @@ var Year = function(input) {
 };
 
 Year.prototype.isLeap = function() {
-  //
-  // YOUR CODE GOES HERE
-  //
-  if (year % 4 == 0) {
-    if ((year % 100 == 0) && (year % 400 == 0)) {
+  if (this.year % 4 == 0) {
+    if ((this.year % 100 == 0) && (this.year % 400 == 0)) {
       return true;
-    } else if (year % 100 == 0) {
+    } else if (this.year % 100 == 0) {
       return false;
     }
     return true;
